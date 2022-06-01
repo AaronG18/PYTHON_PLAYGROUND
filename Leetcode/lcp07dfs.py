@@ -25,9 +25,13 @@ class Solution:
                 # and if index == target node
                 # add 1 to ways and stop this call
                 self.ways += 1
+                print(f"line 28 current ways is :{self.ways}")
             return
         for to in self.edges[index]:
+            # go through each node that current node can reach
+            print("-------------")
             self.dfs(to, steps+1)
+
 
 if __name__ == '__main__':
     run = Solution(5, [[0,2],[2,1],[3,4],[2,3],[1,4],[2,0],[0,4]], 3)
