@@ -1,4 +1,3 @@
-from ast import List
 import collections
 
 
@@ -19,6 +18,7 @@ class Solution:
 
     def dfs(self, index, steps):
         print(f"line 21 index is: {index} and steps is {steps}")
+        print(f"line 22, current edge is {index} : {self.edges[index]}")
         if steps == self.k:
             # if depth is k
             if index == self.n-1:
