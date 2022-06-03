@@ -12,6 +12,7 @@ class Solution:
 
         # initialize vars
         steps = 0
+        # start from node 0, all the nodes in queue are the nodes to explore
         queue = collections.deque([0])
 
         # keep going if there is still node in queue and steps < k
@@ -33,7 +34,7 @@ class Solution:
                 print(f"line 32 queue is: {queue}")
                 if queue.popleft() == n - 1:
                     ways += 1    
-        print(ways) 
+        print(ways)  
 
 if __name__ == '__main__':
     run = Solution()
